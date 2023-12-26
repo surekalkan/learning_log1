@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # Uygulamalarım
     'learning_logs',
+    'users',
 
     # 3. Parti Uygulamalar
     'bootstrap4',
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Turkey'
 
 USE_I18N = True
 
