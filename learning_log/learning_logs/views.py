@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.shortcuts import render, redirect
 
@@ -9,7 +10,7 @@ def index(request):
     """The home page for Learning Log."""
     return render(request, 'learning_logs/index.html')
 
-
+@login_required
 def topics(request):
     topics = Topic.objects.order_by('date_added')
     context = {'topics': topics}
